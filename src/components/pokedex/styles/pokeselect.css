@@ -1,9 +1,12 @@
 .menu__poke {
+    background-color: rgb(207, 38, 38);
     outline: none;
-    border: 0.1px solid rgba(226, 221, 221, 0.253);
+    font-size: 14px;
+    font-style: initial;
+    border: 3px solid rgba(71, 70, 70, 0.192);
     box-shadow: 0px 1px 2px 0px #0808083a;
     width: 190px;
     height: 35px; 
-    color: rgba(0, 0, 0, 0.541);
-    
+    color: rgb(216, 213, 213);
+    border-radius: 4px;
 }

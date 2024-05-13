@@ -37,6 +37,8 @@ const pokeSearch = (poke) => {
   return perName;
 }
 
+
+
   return (
     <div>
         <div className='iman__12'>
@@ -50,7 +52,7 @@ const pokeSearch = (poke) => {
 <h2 className='pokedex__title'><span>Bienvenido {trainer},</span>aqui podremos encontrar tu pokemon favorito</h2>
 <br />
 <div className='inpu__menu'>
-      <form onSubmit={handleSubmit}>
+      <form className='input__butonmodi' onSubmit={handleSubmit}>
         <input className='input__button3' ref={textInput} type="text" />
         <button className='input__button4' >Buscar</button>
       </form>

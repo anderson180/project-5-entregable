@@ -19,10 +19,13 @@ const hadlePokemon = () => {
 
   return (
    <article onClick={hadlePokemon} className='pokecard'>
-    <div className={`pokecard__back ${pokemon?.types[0].type.name}`}></div>
+    
+    <div className={`pokecard__back ${pokemon?.types[0].type.name}`}>
+    
     <figure className='pokecard__img'>
         <img src={pokemon?.sprites.other['official-artwork'].front_default} alt="pokemon image" />
     </figure>
+    <div className="pokecard__caja">
     <h3 className='pokecard__name'>{pokemon?.name}</h3>
     <ul className='pokecard__types'> 
     {
@@ -32,7 +35,8 @@ pokemon?.types.map(type => (
     }
     </ul>
     <span>type</span>
-    <hr />
+    <br />
+    <hr className="hr__2"/>
     <ul className='pokecard__stats'>
         {
             pokemon?.stats.map(stat => (
@@ -41,6 +45,9 @@ pokemon?.types.map(type => (
             ))
         }
     </ul>
+    </div>
+    </div>
+    
    </article>
   )
 }

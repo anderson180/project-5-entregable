@@ -1,72 +1,96 @@
-.pokecard {
-    background-color:white;
-    position: relative;
-    width: 250px;
-    height: 400px;
+.stats__bar {
+    background-color: white;
+    height: 30px;
+    width: 100%;
+}
+.stats__prog {
+    background-color: orange;
+    height: 100%;
+    box-shadow: inset 0px 0px 10px 5px #0808083a;;
+}
+.pokeinfo {
     border: 0px solid rgba(0, 0, 0, 0.322);
-    box-shadow: 7px 7px 5px 0px #0808083a;
-    border-radius: 13px;
+    box-shadow: 7px 7px 20px 0px #0808083a;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px 0px 10px 10px;
+}
+.pokeinfo img {
+    width: 250px;
+    display: flex;
+    gap: 10px;
+}
+.pokeinfo__2 {
+    border: 0px solid rgba(0, 0, 0, 0.322);
+    box-shadow: 7px 7px 20px 0px #0808083a;
+    border-radius: 10px;
+    width: 55%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.pokecard img {
-   margin: 0px 0px 0px 0% ;
+.pokeinfo__2 ul {
+    width: 85%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 14px;
+
 }
-.pokecard__back {
-    background-color: black;
-    position: absolute;
+.pokeinfo__2 li {
+   background-color: rgb(209, 209, 209); 
+   border-radius: 10px;
+   padding: 5px;
+}
+.pokeinfo__1 {
     width: 100%;
-    height: 404px;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.pokecard__img {
-    width: 60%;
-    z-index: 10;
+.pokeinfo__tipos {
+    display: flex;
+ width: 40%;
+ display: flex;
+ justify-content: space-between;
     
 }
-.pokecard__types {
-    display: flex;
+.pokeinfo__stats {
+    width: 85%;
+    padding: 0px 0px 15px 0px;
 }
-.slot2::before {
-    content: '/';
-    margin: 0 5px;
-}
-.pokecard hr {
-    width: 90%;
-    margin: -10px 3px -4px;
-}
-.pokecard__stats {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    gap: 5px;
-    padding-bottom: 1px;
-}
-.pokecard__stats li {
+.cuadro__8 {
+    width: 100%;
+border: 1px solid black;
+    background-color: black;
+    height: 2rem;
+   }
+   .iman__12 {
+    width: 100%;
+    height: 25%;
+    border: 1px solid red;
+    background-color: red;
+   }
+   .iman__13 {
+    width: 15%;
+   margin: 9px 10px 0px 0px;
+   }
+   .pokeinfo__colores {
+    background-color: black;
+    width: 100%;
+    height: 240px;
+    border-radius: 10px 10px 0px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.pokecard__caja {
-width: 92%;
-height: 145px;
-padding: 1px;
-background-color: rgb(248, 238, 180);
-box-shadow: inset  1px 1px 15px 5px #08080875;
+   }
 
-margin: -10px 5px 5px 10px;
+/*-----Colores-----*/
 
-border-radius: 0px 0px 8px 8px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-}
-.hr__2 {
-   
-}
-/*----- Colors -----*/
 .grass {
     background-image: linear-gradient(rgb(21, 104, 58), rgb(70, 255, 169));
 
@@ -122,3 +146,4 @@ justify-content: center;
 .pokecard {
   
 }
+    

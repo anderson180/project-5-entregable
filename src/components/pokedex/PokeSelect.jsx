@@ -22,7 +22,7 @@ setSelectValue(selectOption.current.value)
     <option value="">Todos los Pokemones</option> 
     {
  types?.results.map(type => (
-    <option key={type.url} value={type.url}>{type.name}</option>
+    <option className='color__1'key={type.url} value={type.url}>{type.name}</option>
  ))
     }
    </select>
