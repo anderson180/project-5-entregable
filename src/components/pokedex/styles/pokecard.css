@@ -63,6 +63,7 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 }
+
 /*----- Colors -----*/
 .grass {
     background-image: linear-gradient(rgb(21, 104, 58), rgb(70, 255, 169));
